@@ -19,4 +19,7 @@ export class ListAlumnosPage implements OnInit {
       this.usuario = res.users;
     });
 }
+volverInicio(){
+  this.router.navigate(['/inicio'])
+}
 }

@@ -1,6 +1,8 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Inicio</ion-title>
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Inicio
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,7 +12,7 @@
       <ion-title>
         Bienvenido: {{nombre}} 
       </ion-title>
-      <ion-button (click)="volverlogin()">Volver</ion-button> 
+      <ion-button (click)="volverlogin()">Salir</ion-button> 
       <ion-title>Ver lista de estudiantes</ion-title>
       <ion-button (click)="irlistListAlumnosPage()">Ver lista</ion-button> 
       
@@ -18,7 +20,9 @@
   </ion-card>
 </ion-content>
 <ion-footer>
-  <ion-toolbar>
-    <ion-title>Footer</ion-title>
+  <ion-toolbar color="dark">
+    <ion-title>
+      &copy; 2023 Tu Aplicación
+    </ion-title>
   </ion-toolbar>
 </ion-footer>

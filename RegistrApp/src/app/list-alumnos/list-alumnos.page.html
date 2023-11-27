@@ -1,10 +1,13 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Lista Alumnos</ion-title>
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Lista de estudiantes
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-button (click)="volverInicio()">Atras</ion-button> 
   <div>
     <ion-list>
       <ion-item *ngFor="let item of usuario">
