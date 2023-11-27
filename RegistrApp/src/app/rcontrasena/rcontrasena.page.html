@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Restablecer contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-card-content>
+      <form [formGroup]="formularioRecuperar" (ngSubmit)="restablecerContrasena()">
+        <ion-input formControlName="nuevaContrasena" label="Ingrese contraseña nueva" label-placement="floating" fill="solid" placeholder="Nueva contraseña" type="password"></ion-input>  
+        <ion-input formControlName="repNewContrasena" label="Repita contraseña nueva" label-placement="floating" fill="solid" placeholder="Repita nueva contraseña" type="password"></ion-input>  
+        <br />
+        <ion-button type="submit" [disabled]="!formularioRecuperar.valid">Restablecer contraseña</ion-button> 
+        <ion-button (click)="volveralogin()">Volver</ion-button> 
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
+
+  
