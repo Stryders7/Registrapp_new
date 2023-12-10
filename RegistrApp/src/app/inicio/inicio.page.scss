@@ -1,7 +1,15 @@
-//*ion-title{
-    //color: black;
-//}
-
 ion-toolbar{
     background-color: var(--ion-color-mycolor);
 }
+
+ion-button{
+    background-color: var(--ion-color-mycolor-shade);
+    color: white;
+    font-size: 10px;
+}
+
+ion-item{    
+    color: #135d61;
+    padding: 5px 5px 5px 5px;
+    margin: 5px;
+   }

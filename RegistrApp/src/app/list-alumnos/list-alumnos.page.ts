@@ -22,4 +22,11 @@ export class ListAlumnosPage implements OnInit {
 volverInicio(){
   this.router.navigate(['/inicio'])
 }
+
+marcarAsistencia(item: any) {
+  // Realizar las acciones necesarias al cambiar la asistencia (item.presente)
+  console.log(item.presente); 
+}
+
+
 }
