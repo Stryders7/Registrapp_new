@@ -14,13 +14,21 @@
         <ion-avatar slot="start">
           <ion-img [src]="item.image"></ion-img>
         </ion-avatar>
-        <ion-label> {{ item.firstName }} {{item.lastName}} 
-                    <br>
-          <ion-checkbox slot="start">Presente</ion-checkbox>
-          <ion-checkbox slot="end">Ausente</ion-checkbox>
+        <ion-label>
+          {{ item.firstName }} {{ item.lastName }}
+          <br>
+          <ion-radio-group [(ngModel)]="item.presente" (ionChange)="marcarAsistencia(item)">
+            <ion-item>
+              <ion-label>Presente</ion-label>
+              <ion-radio slot="start" value="Presente"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Ausente</ion-label>
+              <ion-radio slot="start" value="Ausente"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
         </ion-label>
       </ion-item>
-
     </ion-list>
 
 </div>
