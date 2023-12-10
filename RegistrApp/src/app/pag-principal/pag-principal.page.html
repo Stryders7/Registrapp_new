@@ -1,34 +1,34 @@
-<ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>
-      <ion-img src="assets/icon/titulo.png" alt="Logo de la aplicación" withd></ion-img>
-
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card>
-    <ion-card-content>
-      <form [formGroup]="formularioIniciar" (ngSubmit)="grabarusuario()">
-        <ion-item>
-        <ion-input formControlName="nombre"  label="Ingrese nombre" label-placement="floating" fill="solid" placeholder=""></ion-input>
-        </ion-item>
-        <ion-item>
-        <ion-input formControlName="contrasena" label="Ingrese contraseña" label-placement="floating" fill="solid" placeholder="" type="password"></ion-input>
-        </ion-item>
-        <br />
-    
-        <ion-button  type="submit" [disabled]="!formularioIniciar.valid" >Iniciar sesión</ion-button>
-        <ion-button (click)="recuperarcontrasena()">Reestablecer contraseña </ion-button> 
-      </form>
-    </ion-card-content>
-  </ion-card>
+  <ion-img src="assets/icon/03.png"></ion-img>
+  <ion-card-content>
+  <form [formGroup]="formularioIniciar" (ngSubmit)="grabarusuario()">
+    <ion-item>
+    <ion-input formControlName="nombre" 
+               label-placement="stacked" 
+               fill="clear" placeholder="" 
+               placeholder="Ingrese su nombre aquí" 
+               label="Ingrese nombre" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+    <ion-input formControlName="contrasena" 
+               label="Ingrese contraseña"  
+               label-placement="stacked" fill="clear" 
+               placeholder="Ingrese contraseña aquí" 
+               type="password"></ion-input>
+    </ion-item>
+    <br/>
+    <ion-button color="mycolor" 
+                type="submit" [disabled]="!formularioIniciar.valid">Iniciar sesión</ion-button>
+    <ion-button color="mycolor" (click)="recuperarcontrasena()">Reestablecer contraseña </ion-button> 
+  </form>
+</ion-card-content>
+
 </ion-content>
+
 <ion-footer>
-  <ion-toolbar color="dark">
-    <ion-title>
-      &copy; 2023 Tu Aplicación
-    </ion-title>
+  <ion-toolbar color="mycolor">
+    <ion-title> &copy; 2023 Derechos reservados por <b>RegistrAPP</b></ion-title>
   </ion-toolbar>
 </ion-footer>
