@@ -1,30 +1,32 @@
-
 <ion-content [fullscreen]="true">
   <ion-img src="assets/icon/03.png"></ion-img>
   <ion-card-content>
-  <form [formGroup]="formularioIniciar" (ngSubmit)="grabarusuario()">
-    <ion-item>
-    <ion-input formControlName="nombre" 
-               label-placement="stacked" 
-               fill="clear" placeholder="" 
-               placeholder="Ingrese su nombre aquí" 
-               label="Ingrese nombre" ></ion-input>
-    </ion-item>
+    <form [formGroup]="formularioIniciar" (ngSubmit)="grabarusuario()" autocomplete="off">
+      <ion-item>
+        <ion-input formControlName="nombre" 
+                   label-placement="stacked" 
+                   fill="clear" 
+                   placeholder="Ingrese su nombre aquí" 
+                   label="Ingrese nombre" 
+                   autocomplete="off"></ion-input>
+      </ion-item>
 
-    <ion-item>
-    <ion-input formControlName="contrasena" 
-               label="Ingrese contraseña"  
-               label-placement="stacked" fill="clear" 
-               placeholder="Ingrese contraseña aquí" 
-               type="password"></ion-input>
-    </ion-item>
-    <br/>
-    <ion-button color="mycolor" 
-                type="submit" [disabled]="!formularioIniciar.valid">Iniciar sesión</ion-button>
-    <ion-button color="mycolor" (click)="recuperarcontrasena()">Reestablecer contraseña </ion-button> 
-  </form>
-</ion-card-content>
-
+      <ion-item>
+        <ion-input formControlName="contrasena" 
+                   label="Ingrese contraseña"  
+                   label-placement="stacked" 
+                   fill="clear" 
+                   placeholder="Ingrese contraseña aquí" 
+                   type="password"
+                   autocomplete="off"></ion-input>
+      </ion-item>
+      <br/>
+      <ion-button color="mycolor" 
+                  type="submit" [disabled]="!formularioIniciar.valid">Iniciar sesión</ion-button>
+      <ion-button color="mycolor" (click)="recuperarcontrasena()">Reestablecer contraseña </ion-button> 
+    </form>
+    
+  </ion-card-content>
 </ion-content>
 
 <ion-footer>
@@ -32,3 +34,4 @@
     <ion-title> &copy; 2023 Derechos reservados por <b>RegistrAPP</b></ion-title>
   </ion-toolbar>
 </ion-footer>
+

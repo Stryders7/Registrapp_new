@@ -46,6 +46,7 @@ export class PagPrincipalPage implements OnInit {
       this.StateService.setNombre = nombre.nombre;
       this.StateService.setUserIsLogged(true);
       this.router.navigate(['/inicio']);
+      this.formularioIniciar.reset();
     }
   }
   
