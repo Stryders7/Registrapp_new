@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: 'inicio',
-    //  canActivate:[SeguridadGuard],
+    canActivate:[SeguridadGuard],
     loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
@@ -27,7 +27,8 @@ const routes: Routes = [
     loadChildren: () => import('./rcontrasena/rcontrasena.module').then( m => m.RcontrasenaPageModule)
   },
   {
-    path: 'list-alumnos',
+    path: 'list-alumnos', 
+    canActivate:[SeguridadGuard],
     loadChildren: () => import('./list-alumnos/list-alumnos.module').then( m => m.ListAlumnosPageModule)
   },
 

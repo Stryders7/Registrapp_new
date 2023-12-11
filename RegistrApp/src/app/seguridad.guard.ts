@@ -22,8 +22,9 @@ export class SeguridadGuard implements CanActivate {
     );
     if(isLogged == false){
     
-      this.router.navigate(['/login']);
+      this.router.navigate(['/pag-principal']);
     }
     return isLogged;
   
-}}
+}
+}

@@ -1,16 +1,14 @@
 <ion-header>
   <ion-toolbar color="mycolor">
-    <ion-title>
-      Inicio
-    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-img src="assets/icon/06.png"></ion-img>
     <ion-card-content>
-      <ion-title class="color1">
+      <ion-input class="color1">
         <b>Bienvenido:</b> {{nombre}}
-      </ion-title>
+      </ion-input>
       <ion-grid><ion-row><ion-col size="12" class="ion-text-end">
       <ion-button color="mycolor" 
                 (click)="volverlogin()">Salir</ion-button>
