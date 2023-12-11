@@ -1,13 +1,12 @@
 <ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>
-      Lista de estudiantes
-    </ion-title>
+  <ion-toolbar color="mycolor">
+    <ion-grid><ion-row><ion-col class="ion-text-start">
+      <ion-button color="mycolor" (click)="volverInicio()">Atrás</ion-button>
+    </ion-col></ion-row> </ion-grid>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-button (click)="volverInicio()">Atras</ion-button> 
+  <ion-img src="assets/icon/07.png"></ion-img>
   <div>
     <ion-list>
       <ion-item *ngFor="let item of usuario">
@@ -30,11 +29,12 @@
         </ion-label>
       </ion-item>
     </ion-list>
-
 </div>
+</ion-content>
+
 <ion-footer>
-  <ion-toolbar>
-    <ion-title>Footer</ion-title>
+  <ion-toolbar color="mycolor">
+    <ion-title> &copy; 2023 Derechos reservados por <b>RegistrAPP</b></ion-title>
   </ion-toolbar>
 </ion-footer>
-</ion-content>
+

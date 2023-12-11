@@ -12,6 +12,7 @@ export class RcontrasenaPage implements OnInit {
 
   constructor(public fb: FormBuilder, public router: Router) { 
     this.formularioRecuperar = this.fb.group({
+      'nombre': ['', Validators.required],
       'nuevaContrasena': ['', Validators.required],
       'repNewContrasena': ['', Validators.required]
     })

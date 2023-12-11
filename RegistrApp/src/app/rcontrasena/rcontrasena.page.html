@@ -7,6 +7,13 @@
   <ion-img src="assets/icon/05.png"></ion-img>
     <ion-card-content>
       <form [formGroup]="formularioRecuperar" (ngSubmit)="restablecerContrasena()">
+
+        <ion-input formControlName="nombre" 
+                     label-placement="stacked" 
+                     fill="clear" placeholder="" 
+                     placeholder="Ingrese su nombre aquí" 
+                     label="Ingrese nombre"></ion-input>
+
         <ion-input formControlName="nuevaContrasena" 
                    label="Ingrese contraseña nueva" 
                    label-placement="stacked" fill="clear" 
