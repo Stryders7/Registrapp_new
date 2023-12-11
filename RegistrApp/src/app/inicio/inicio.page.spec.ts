@@ -14,4 +14,11 @@ describe('InicioPage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Deberia contener un nombre', () =>{
+    const fixture = TestBed.createComponent(InicioPage);
+    const app = fixture.componentInstance;
+    expect(app.nombre).toContain('');
+  });
+
 });

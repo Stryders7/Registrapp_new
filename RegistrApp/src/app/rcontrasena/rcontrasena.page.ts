@@ -22,11 +22,13 @@ export class RcontrasenaPage implements OnInit {
   }
 
   volveralogin() {
-    this.router.navigate(['/pag-principal'])
+    this.router.navigate(['/pag-principal']),
+    this.formularioRecuperar.reset();
   }
 
   restablecerContrasena() {
-    this.router.navigate(['/pag-principal'])
+    this.router.navigate(['/pag-principal']),
+    this.formularioRecuperar.reset();
   }
 }
 
